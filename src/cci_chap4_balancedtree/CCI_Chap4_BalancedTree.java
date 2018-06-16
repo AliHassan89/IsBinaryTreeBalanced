@@ -51,10 +51,7 @@ public class CCI_Chap4_BalancedTree
         if (Math.abs(leftHeight - rightHeight) > 1)
             return false;
         
-        else
-        {
-            return isBalanced(root.left) && isBalanced(root.right);
-        }
+         return isBalanced(root.left) && isBalanced(root.right);
     }
     
     public static int getHeight(Node root)
